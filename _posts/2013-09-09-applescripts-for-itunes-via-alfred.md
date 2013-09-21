@@ -4,13 +4,18 @@ title:  "Applescripts for iTunes via Alfred App"
 date:   2013-09-09 13:31:06
 categories:
 ---
-Sometimes iTunes can be frustrating, especially if you have large amounts of music to sort through and possibly trash. Personally, I like to do this while working on something else, so I don't want to have to go through the whole process of sorting and deleting manually.
 
-Like (I assume) many DJs and music lovers, I have a lot of music. But I don't want to have to stop, go to iTunes, skip through the offending song to check it doesn't get better, ctrl+click Show in Finder, cmd+del, cmd-tab iTunes, ctrl+click Show in Playlist> Music, delete from iTunes library…
+_Sometimes iTunes can be frustrating, especially if you have large amounts of music to sort through and possibly trash. This post outlines one way of creating hotkeys to help streamline this process._
 
-Wouldn't it be great if there was a way to do all this from a hotkey from any application? A way that didn't require any other input, so you didn't have to pause what you were doing elsewhere? 
+You are in the middle of something, headphones on — when the music changes. Perhaps its an alphabetically adjacent album, or you were using shuffle, or this track has the most irritating breakdown you have ever heard. Your hard won, jealously defended moment of serene concentration is broken. 
 
-As it turns out, one way of doing this is by setting global hotkeys in [Alfred.app](http://www.alfredapp.com/) which trigger applescripts to deal with iTunes. Note that these actions are done using applescripts, but if you don't want to have to put ugly shortcuts in your global scripts menu or switch to another app to run the scripts, you need some way of setting a global hotkey. This is where alfred.app comes in, although you need the paid powerpack version to create custom workflows and hotkeys. 
+I have collected a lot of music over the years, much of which I have forgotten or moved on from. I suspect the same is true for many other music lovers, DJs and garden variety data whores out there. But I don't let iTunes organise my files for me, and so sorting and deleting manually can get arduous. I don't want to have to stop, go to iTunes, skip through the offending song to check it doesn't get better, ctrl+click Show in Finder, cmd+del, cmd-tab iTunes, ctrl+click Show in Playlist> Music, delete from iTunes library…
+
+_A global hotkey that does all this, with minimal disruption to workflow._
+
+One way to do this — there are many, and I don't claim this is the best way but merely that it works for me — is to use the PowerPack version of [Alfred.app](http://www.alfredapp.com/) to create hotkey triggers for iTunes applescripts.
+
+Note that these actions are done using applescripts, but if you don't want to have to put ugly shortcuts in your global scripts menu or switch to another app to run the scripts, you need some way of setting a global hotkey. This is where alfred.app comes in, although you need the paid powerpack version to create custom workflows and hotkeys. 
 
 
 <dl>

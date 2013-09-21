@@ -1,3 +1,12 @@
-name: Your New Jekyll Site
-markdown: redcarpet
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+name: jahla.org
+markdown: rdiscount
+rdiscount:
+  extensions:
+#    - autolink      # greedily urlify links
+    - footnotes     # footnotes
+    - smart         # typographic substitutions with SmartyPants
 pygments: true
+paginate: 3
+exclude: ["Gemfile", "Gemfile.lock", "README.md", 'sass', 'watch.sh', 'style.scss', 'bootstrap.scss'] # files to exclude
+
