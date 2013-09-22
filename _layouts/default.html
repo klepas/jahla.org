@@ -27,34 +27,14 @@
     </nav>
 
 	<header role="banner">
-		<div class="container" role="main">
-			<div style="margin-top:1em; text-align: center;">
-                <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-        	</div>
-        </div>
+		{% include header.html %}
 	</header>
 
 	{{ content }}
 
 
 	<footer role="contentinfo">
-		<div class="container" role="main">
-			<div style="margin-top:1em; text-align: center;">
-              <div class="contact">
-                <p>
-                  Jahla Gato<br />
-                  Geek, armchair philosopher, fashion designer<br />
-                  jahla@jahla.org
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/yourusername/">github.com/jahla</a><br />
-                  <a href="http://twitter.com/yourusername/">twitter.com/jahlagato</a><br />
-                </p>
-              </div>
-        	</div>
-        </div>
+		{% include footer.html %}
 	</footer>
 
 	<!-- Javascripts 

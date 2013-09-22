@@ -17,10 +17,10 @@ One way to do this — there are many, and I don't claim this is the best way bu
 
 Note that these actions are done using applescripts, but if you don't want to have to put ugly shortcuts in your global scripts menu or switch to another app to run the scripts, you need some way of setting a global hotkey. This is where alfred.app comes in, although you need the paid powerpack version to create custom workflows and hotkeys. 
 
-
 <dl>
 <dt>Kill current track</dt>
 <dd>Deletes current iTunes track from iTunes, file to trash. Plays next. *Use carefully, no confirmation dialogue*</dd>
+<dd>**Important edit** As of iTunes 11.1, this script no longer starts playing the next track in the playlist but takes you back to the first one. I will post the fixed version asap. 
 {% highlight applescript %}
 global addenda
 tell application "iTunes"
