@@ -1,5 +1,5 @@
 # visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
-name: jahla.org
+name: The Optimistic Cynicism of J.M.G
 markdown: rdiscount
 rdiscount:
   extensions:
