@@ -1,0 +1,73 @@
+body {
+	width: 100%;
+}
+
+div#container {
+	text-align: center;
+}
+
+nav, header, div#content, footer {
+	width: 48em;
+	margin: 0 auto;
+	padding-top: 4em;
+	text-align: left;
+}
+
+footer {
+	margin-bottom: 4em;
+}
+/*	----------------------------------
+	Navigation
+*/
+
+nav#main ul {
+	list-style: none;
+	text-align: center;
+	li {
+		display: inline;
+		padding-right: 2em;
+	}
+}
+
+nav#contact ul,
+ul.posts {
+	list-style: none;
+}
+
+div.page-nav-top {
+	margin-bottom: 2em;
+}
+
+div.page-nav-bottom {
+	margin-top: 2em;
+}
+
+/*	----------------------------------
+	Typography
+*/
+
+h1#site-title {
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 1em;
+}
+
+div#content {
+	p, ul, ol, dl {
+		margin-bottom: 0.5em;
+	}
+	p {
+		text-indent: 1em;
+	}
+	div.highlight {
+		margin: 1.5em 0;
+	}
+}
+
+span.post-date {
+	display: block;
+	margin-bottom: 2em;
+}
+
