@@ -5721,7 +5721,8 @@ td.visible-print {
   td.hidden-print {
     display: none !important; } }
 body {
-  width: 100%; }
+  width: 100%;
+  line-height: 1.6; }
 
 div#container {
   text-align: center; }
@@ -5762,7 +5763,8 @@ h1#site-title {
   text-align: center; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  font-family: 'Cardo', serif; }
 
 div#content p, div#content ul, div#content ol, div#content dl {
   margin-bottom: 0.5em; }
