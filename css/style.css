@@ -5744,7 +5744,7 @@ nav#main ul {
   text-align: center; }
   nav#main ul li {
     display: inline;
-    padding-right: 2em; }
+    padding-right: 3em; }
 
 nav#contact ul,
 ul.posts {
@@ -5767,11 +5767,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Cardo', serif; }
 
 div#content p, div#content ul, div#content ol, div#content dl {
-  margin-bottom: 0.5em; }
-div#content p {
+  margin-right: 1em;
+  margin-bottom: 0.6em; }
+div#content p + p {
   text-indent: 1em; }
 div#content div.highlight {
-  margin: 1.5em 0; }
+  margin: 1.6em 0; }
 
 span.post-date {
   display: block;

@@ -26,7 +26,7 @@ nav#main ul {
 	text-align: center;
 	li {
 		display: inline;
-		padding-right: 2em;
+		padding-right: 3em;
 	}
 }
 
@@ -58,13 +58,14 @@ h1, h2, h3, h4, h5, h6 {
 
 div#content {
 	p, ul, ol, dl {
-		margin-bottom: 0.5em;
+		margin-right: 1em;
+		margin-bottom: 0.6em;
 	}
-	p {
+	p + p {
 		text-indent: 1em;
 	}
 	div.highlight {
-		margin: 1.5em 0;
+		margin: 1.6em 0;
 	}
 }
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "LBD Love: my latest creation"
+title:  "Latest creation: my Little Black Dress"
 date:   2013-09-21 20:57:52
 categories:
 ---

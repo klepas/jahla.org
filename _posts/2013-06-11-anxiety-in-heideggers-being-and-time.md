@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Anxiety in Heidegger’s 'Being and Time': Honours thesis"
+title:  "Anxiety in Heidegger’s ‘Being and Time’: Honours thesis"
 date:   2013-06-11 07:42:18
 categories:
 ---
