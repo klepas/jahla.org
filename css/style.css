@@ -5777,3 +5777,7 @@ div#content div.highlight {
 span.post-date {
   display: block;
   margin-bottom: 2em; }
+
+span#blurb {
+  display: block;
+  margin-bottom: 2em; }
