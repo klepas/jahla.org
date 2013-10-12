@@ -5720,6 +5720,17 @@ td.visible-print {
   th.hidden-print,
   td.hidden-print {
     display: none !important; } }
+/*
+----------------------------------
+  Variables
+
+  Custom variables follow, along with edits from _variables.scss  
+*/
+/*
+----------------------------------
+  Page elements
+  
+*/
 body {
   width: 100%;
   line-height: 1.6; }
@@ -5736,8 +5747,10 @@ nav, header, div#content, footer {
 footer {
   margin-bottom: 4em; }
 
-/*	----------------------------------
-	Navigation
+/*
+----------------------------------
+  Navigation
+  
 */
 nav#main ul {
   list-style: none;
@@ -5745,6 +5758,21 @@ nav#main ul {
   nav#main ul li {
     display: inline;
     padding-right: 3em; }
+    nav#main ul li a {
+      font-family: "Cardo", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+      font-style: italic;
+      text-decoration: none;
+      color: #36454f;
+      padding: 0.5em 0.8em;
+      background-color: #f2f3f4;
+      border: 1px solid #f2f3f4;
+      border-radius: 4px; }
+    nav#main ul li a:hover,
+    nav#main ul li a:focus {
+      background-color: #2A2C39;
+      border: 1px solid #2A2C39;
+      color: white;
+      text-decoration: none; }
 
 nav#contact ul,
 ul.posts {
@@ -5756,15 +5784,32 @@ div.page-nav-top {
 div.page-nav-bottom {
   margin-top: 2em; }
 
-/*	----------------------------------
-	Typography
+/*
+----------------------------------
+  Typography
+  
 */
 h1#site-title {
   text-align: center; }
+  h1#site-title a {
+    color: #36454f; }
+  h1#site-title a:hover,
+  h1#site-title a:focus {
+    text-decoration: none; }
+  h1#site-title a span {
+    display: block; }
+  h1#site-title a span.the,
+  h1#site-title a span.of {
+    font-style: italic;
+    font-size: 0.666em; }
+  h1#site-title a span.oc {
+    padding: 0.5em 0; }
+  h1#site-title a span.jmg {
+    padding-top: 0.5em; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1em;
-  font-family: 'Cardo', serif; }
+  font-family: "Cardo", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif; }
 
 div#content p, div#content ul, div#content ol, div#content dl {
   margin-right: 1em;
