@@ -1,81 +1,166 @@
-body {
+/*
+----------------------------------
+  Variables
+
+  Custom variables follow, along with edits from _variables.scss  
+*/
+
+$font-family-serif: "Cardo", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+
+
+/*
+----------------------------------
+  Page elements
+  
+*/
+
+body
+  {
 	width: 100%;
 	line-height: 1.6;
-}
+  }
 
-div#container {
+div#container
+  {
 	text-align: center;
-}
+  }
 
-nav, header, div#content, footer {
+nav, header, div#content, footer
+  {
 	width: 48em;
 	margin: 0 auto;
 	padding-top: 4em;
 	text-align: left;
-}
+  }
 
-footer {
+footer
+  {
 	margin-bottom: 4em;
-}
-/*	----------------------------------
-	Navigation
+  }
+
+
+/*
+----------------------------------
+  Navigation
+  
 */
 
-nav#main ul {
+nav#main ul
+  {
 	list-style: none;
 	text-align: center;
-	li {
-		display: inline;
-		padding-right: 3em;
+	  li
+	    {
+		  display: inline;
+		  padding-right: 3em;
+		  a
+		    {
+		    font-family: $font-family-serif;
+  	  	font-style: italic;
+  	  	text-decoration: none;
+  	  	color: $grayCharcoal;
+  	  	padding: 0.5em 0.8em;
+  	  	background-color: $whiteAntiflash;
+  	  	border: 1px solid $whiteAntiflash;
+  	  	border-radius: 4px;
+  	  	}
+      a:hover,
+      a:focus
+        {
+        background-color: #2A2C39;
+        border: 1px solid #2A2C39;
+        color: white;
+        text-decoration: none;
+        }
+		  }
 	}
-}
 
 nav#contact ul,
-ul.posts {
+ul.posts
+  {
 	list-style: none;
-}
+  }
 
-div.page-nav-top {
+div.page-nav-top
+  {
 	margin-bottom: 2em;
-}
+  }
 
-div.page-nav-bottom {
+div.page-nav-bottom
+  {
 	margin-top: 2em;
-}
+  }
 
-/*	----------------------------------
-	Typography
+
+/*
+----------------------------------
+  Typography
+  
 */
 
-h1#site-title {
+h1#site-title
+  {
+  a
+    {
+    color: $grayCharcoal;
+    }
+    a:hover,
+    a:focus
+      {
+      text-decoration: none;
+      }
 	text-align: center;
-}
+	  a span
+	    {
+	    display: block;
+      }
+    a span.the,
+    a span.of
+      {
+      font-style: italic;
+      font-size: 0.666em;
+      }
+    a span.oc
+      {
+      padding: 0.5em 0;
+      }
+    a span.jmg
+      {
+      padding-top: 0.5em;
+      }
+  }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6
+  {
 	margin-bottom: 1em;
-	font-family: 'Cardo', serif;
-}
+	font-family: $font-family-serif;
+  }
 
-div#content {
-	p, ul, ol, dl {
+div#content
+  {
+	p, ul, ol, dl
+	  {
 		margin-right: 1em;
 		margin-bottom: 0.6em;
-	}
-	p + p {
+    }
+	p + p
+	  {
 		text-indent: 1em;
-	}
-	div.highlight {
+    }
+	div.highlight
+	  {
 		margin: 1.6em 0;
-	}
-}
+    }
+  }
 
-span.post-date {
+span.post-date
+  {
 	display: block;
 	margin-bottom: 2em;
-}
+  }
 
-span#blurb {
+span#blurb
+  {
 	display: block;
 	margin-bottom: 2em;
-}
-
+  }
