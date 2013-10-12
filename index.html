@@ -4,24 +4,24 @@ title: Homepage
 ---
 
 <div id="content">
-<div class="blurb">
-    <span id="blurb" class="">Hi, I'm Jahla. I'm a geek, armchair philosopher, sometimes fashion designer, and occasional social commentator from Canberra, Australia. Welcome to my site where I post about life, issues that interest me, stuff I've been up to and — well — just about whatever.</span>
-    <img class="profile-pic" src="/img/me.png" width="128" height="128" alt="Picture of me" />
-    <nav id="contact" class="">
-        <ul>
-            <li><a href="http://github.com/jahla/"><span class="icon-github"></span> github.com/jahla</a></li>
-            <li><a href="http://twitter.com/jahlagato/"><span class="icon-twitter-sign"></span> twitter.com/jahlagato</a></li>
-            <li><a href="mailto:jahla@jahla.org"><span class="icon-envelope"></span> jahla@jahla.org</a></li>
-        </ul>
-    </nav>
-</div>
-
-<div class="posts">
+  
+  <p id="blurb" class="hero">Hi, I&rsquo;m Jahla. I&rsquo;m a geek, armchair philosopher, sometimes fashion designer, and occasional social commentator from Canberra, Australia. Welcome to my site where I post about life, issues that interest me, stuff I&rsquo;ve been up to and&thinsp;&mdash;&thinsp;well&thinsp;&mdash;&thinsp;just about whatever.</p>
+    
+  <nav id="contact">
+    <ul>
+      <li><a href="http://github.com/jahla/" rel="me"><span class="icon-github"></span> github.com/jahla</a></li>
+      <li><a href="http://twitter.com/jahlagato/" rel="me"><span class="icon-twitter-sign"></span> twitter.com/jahlagato</a></li>
+      <li><a href="mailto:jahla@jahla.org"><span class="icon-envelope"></span> jahla@jahla.org</a></li>
+    </ul>
+  </nav>
+  
+  <div class="posts">
     <h2>Posts</h2>
     <ul class="posts">
     {% for post in site.posts %}
-        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
     </ul>
-</div>
-</div>
+  </div>
+  
+</div> <!-- closes #content -->

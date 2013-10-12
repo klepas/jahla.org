@@ -16,21 +16,26 @@ $font-family-serif: "Cardo", "Palatino Linotype", Palatino, Palladio, "URW Palla
 
 body
   {
-	width: 100%;
 	line-height: 1.6;
   }
 
 div#container
   {
-	text-align: center;
+  @include make-row();
+  margin: 0 auto;
+  text-align: center;
   }
 
-nav, header, div#content, footer
+nav#main,
+header,
+div#content,
+footer
   {
-	width: 48em;
-	margin: 0 auto;
+  margin: 0 auto;
 	padding-top: 4em;
 	text-align: left;
+	@include make-md-column(8);
+	@include make-md-column-offset(2);
   }
 
 footer
