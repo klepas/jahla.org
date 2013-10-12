@@ -15,7 +15,9 @@ _A global hotkey that does all this, with minimal disruption to workflow._
 
 One way to do this — there are many, and I don't claim this is the best way but merely that it works for me — is to use the PowerPack version of [Alfred.app](http://www.alfredapp.com/) to create hotkey triggers for iTunes applescripts.
 
-Note that these actions are done using applescripts, but if you don't want to have to put ugly shortcuts in your global scripts menu or switch to another app to run the scripts, you need some way of setting a global hotkey. This is where alfred.app comes in, although you need the paid powerpack version to create custom workflows and hotkeys. 
+The scripts listed here are variations on some of my favourites from Doug of [Doug's Applescripts for iTunes](http://dougscripts.com/itunes/). 
+
+I didn't want to have to put ugly shortcuts in my global scripts menu or switch to another app to run the scripts, so I needed some way of setting a global hotkey. This is where alfred.app comes in, although you need the paid powerpack version to create custom workflows and hotkeys. 
 
 <dl>
 <dt>Kill current track</dt>
