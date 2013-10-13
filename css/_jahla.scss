@@ -27,6 +27,7 @@ div#container
   }
 
 nav#main,
+nav#main-large,
 header,
 div#content,
 footer
@@ -50,7 +51,8 @@ footer
   
 */
 
-nav#main ul
+nav#main ul,
+nav#main-large ul
   {
 	list-style: none;
 	text-align: center;
@@ -108,8 +110,7 @@ div.page-nav-bottom
   
 */
 
-h1#site-title,
-h1#site-title-large
+h1#site-title
   {
   a
     {
@@ -128,7 +129,6 @@ h1#site-title-large
     a span.the,
     a span.of
       {
-      font-size: 0.444em;
       font-family: 'Open Sans';
       text-transform: uppercase; 
       }
@@ -141,7 +141,7 @@ h1#site-title-large
       padding-top: 0.5em;
       }
   }
-h1#site-title
+header#small h1#site-title
   {
     a span
       {
@@ -151,6 +151,18 @@ h1#site-title
     a span.of
       {
       font-size: 0.266em;
+      }
+  }
+header#large h1#site-title
+  {
+    a span
+      {
+      font-size: 1em;
+      }
+    a span.the,
+    a span.of
+      {
+      font-size: 0.444em;
       }
   }
 

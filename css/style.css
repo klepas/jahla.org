@@ -5748,6 +5748,7 @@ div#container {
     clear: both; }
 
 nav#main,
+nav#main-large,
 header,
 div#content,
 footer {
@@ -5760,6 +5761,7 @@ footer {
   padding-right: 15px; }
   @media (min-width: 992px) {
     nav#main,
+    nav#main-large,
     header,
     div#content,
     footer {
@@ -5767,6 +5769,7 @@ footer {
       width: 66.66667%; } }
   @media (min-width: 992px) {
     nav#main,
+    nav#main-large,
     header,
     div#content,
     footer {
@@ -5780,13 +5783,16 @@ footer {
   Navigation
   
 */
-nav#main ul {
+nav#main ul,
+nav#main-large ul {
   list-style: none;
   text-align: center; }
-  nav#main ul li {
+  nav#main ul li,
+  nav#main-large ul li {
     display: inline;
     padding-right: 3em; }
-    nav#main ul li a {
+    nav#main ul li a,
+    nav#main-large ul li a {
       font-family: "Cardo", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
       font-style: italic;
       text-decoration: none;
@@ -5796,7 +5802,9 @@ nav#main ul {
       border: 1px solid #f2f3f4;
       border-radius: 4px; }
     nav#main ul li a:hover,
-    nav#main ul li a:focus {
+    nav#main ul li a:focus,
+    nav#main-large ul li a:hover,
+    nav#main-large ul li a:focus {
       background-color: #2A2C39;
       border: 1px solid #2A2C39;
       color: white;
@@ -5820,39 +5828,35 @@ div.page-nav-bottom {
   Typography
   
 */
-h1#site-title,
-h1#site-title-large {
+h1#site-title {
   text-align: center; }
-  h1#site-title a,
-  h1#site-title-large a {
+  h1#site-title a {
     color: #36454f; }
   h1#site-title a:hover,
-  h1#site-title a:focus,
-  h1#site-title-large a:hover,
-  h1#site-title-large a:focus {
+  h1#site-title a:focus {
     text-decoration: none; }
-  h1#site-title a span,
-  h1#site-title-large a span {
+  h1#site-title a span {
     display: block; }
   h1#site-title a span.the,
-  h1#site-title a span.of,
-  h1#site-title-large a span.the,
-  h1#site-title-large a span.of {
-    font-size: 0.444em;
+  h1#site-title a span.of {
     font-family: 'Open Sans';
     text-transform: uppercase; }
-  h1#site-title a span.oc,
-  h1#site-title-large a span.oc {
+  h1#site-title a span.oc {
     padding: 0.5em 0; }
-  h1#site-title a span.jmg,
-  h1#site-title-large a span.jmg {
+  h1#site-title a span.jmg {
     padding-top: 0.5em; }
 
-h1#site-title a span {
+header#small h1#site-title a span {
   font-size: 0.6em; }
-h1#site-title a span.the,
-h1#site-title a span.of {
+header#small h1#site-title a span.the,
+header#small h1#site-title a span.of {
   font-size: 0.266em; }
+
+header#large h1#site-title a span {
+  font-size: 1em; }
+header#large h1#site-title a span.the,
+header#large h1#site-title a span.of {
+  font-size: 0.444em; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1em;
