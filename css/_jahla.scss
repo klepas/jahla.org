@@ -123,23 +123,37 @@ h1#site-title-large
 	text-align: center;
 	  a span
 	    {
-	    display: block;
+      display: block;
       }
     a span.the,
     a span.of
       {
-      font-style: italic;
-      font-size: 0.666em;
+      font-size: 0.444em;
+      font-family: 'Open Sans';
+      text-transform: uppercase; 
       }
     a span.oc
       {
       padding: 0.5em 0;
       }
     a span.jmg
-      {
+      {     
       padding-top: 0.5em;
       }
   }
+h1#site-title
+  {
+    a span
+      {
+      font-size: 0.6em;
+      }
+    a span.the,
+    a span.of
+      {
+      font-size: 0.266em;
+      }
+  }
+
 
 h1, h2, h3, h4, h5, h6
   {

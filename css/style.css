@@ -5838,14 +5838,21 @@ h1#site-title-large {
   h1#site-title a span.of,
   h1#site-title-large a span.the,
   h1#site-title-large a span.of {
-    font-style: italic;
-    font-size: 0.666em; }
+    font-size: 0.444em;
+    font-family: 'Open Sans';
+    text-transform: uppercase; }
   h1#site-title a span.oc,
   h1#site-title-large a span.oc {
     padding: 0.5em 0; }
   h1#site-title a span.jmg,
   h1#site-title-large a span.jmg {
     padding-top: 0.5em; }
+
+h1#site-title a span {
+  font-size: 0.6em; }
+h1#site-title a span.the,
+h1#site-title a span.of {
+  font-size: 0.266em; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1em;
