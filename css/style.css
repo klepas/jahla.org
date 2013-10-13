@@ -5820,22 +5820,31 @@ div.page-nav-bottom {
   Typography
   
 */
-h1#site-title {
+h1#site-title,
+h1#site-title-large {
   text-align: center; }
-  h1#site-title a {
+  h1#site-title a,
+  h1#site-title-large a {
     color: #36454f; }
   h1#site-title a:hover,
-  h1#site-title a:focus {
+  h1#site-title a:focus,
+  h1#site-title-large a:hover,
+  h1#site-title-large a:focus {
     text-decoration: none; }
-  h1#site-title a span {
+  h1#site-title a span,
+  h1#site-title-large a span {
     display: block; }
   h1#site-title a span.the,
-  h1#site-title a span.of {
+  h1#site-title a span.of,
+  h1#site-title-large a span.the,
+  h1#site-title-large a span.of {
     font-style: italic;
     font-size: 0.666em; }
-  h1#site-title a span.oc {
+  h1#site-title a span.oc,
+  h1#site-title-large a span.oc {
     padding: 0.5em 0; }
-  h1#site-title a span.jmg {
+  h1#site-title a span.jmg,
+  h1#site-title-large a span.jmg {
     padding-top: 0.5em; }
 
 h1, h2, h3, h4, h5, h6 {

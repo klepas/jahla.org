@@ -2,6 +2,9 @@
 layout: default
 ---
 
+{% include nav.html %}
+{% include header.html %}
+
 <div id="content">
   <div class="page-nav-top">
   {% if page.previous %}
@@ -50,3 +53,5 @@ layout: default
   {% endif %}
   </div>
 </div> <!-- closes #content -->
+
+{% include footer.html %}

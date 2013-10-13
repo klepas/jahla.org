@@ -43,7 +43,7 @@ footer
 	margin-bottom: 4em;
   }
 
-
+  
 /*
 ----------------------------------
   Navigation
@@ -108,7 +108,8 @@ div.page-nav-bottom
   
 */
 
-h1#site-title
+h1#site-title,
+h1#site-title-large
   {
   a
     {
@@ -167,10 +168,6 @@ span.post-date
   {
 	display: block;
 	margin-bottom: 2em;
-  }
-
-div.posts
-  {
   }
 
 p.hero
