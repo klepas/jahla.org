@@ -5815,13 +5815,39 @@ ul.posts {
   list-style: none; }
 
 nav#contact ul {
-  margin-top: 2em; }
+  margin-top: 2em;
+  margin-left: -3em; }
+
+nav#contact li {
+  padding: 1em 0;
+  line-height: 1em; }
 
 div.page-nav-top {
   margin-bottom: 2em; }
 
 div.page-nav-bottom {
   margin-top: 2em; }
+
+/*
+----------------------------------
+  Icons
+  
+*/
+span.contact {
+  font-size: 1.5em;
+  padding-right: 1em;
+  margin-top: -0.16em;
+  float: left; }
+
+/*
+----------------------------------
+  Images
+  
+*/
+img.profile-pic {
+  display: inline;
+  float: right;
+  margin: 0 0 2em 2em; }
 
 /*
 ----------------------------------
@@ -5841,16 +5867,27 @@ h1#site-title {
   h1#site-title a span.of {
     font-family: 'Open Sans';
     text-transform: uppercase; }
+  h1#site-title a span.the {
+    line-height: 1em;
+    padding: 0 0.8em;
+    display: inline;
+    background-color: white; }
   h1#site-title a span.oc {
-    padding: 0.5em 0; }
+    padding: 1em 0;
+    font-weight: 700;
+    font-size: 1.6em;
+    border-top: 1px solid #36454f;
+    margin-top: -0.4em; }
   h1#site-title a span.jmg {
-    padding-top: 0.5em; }
+    padding-top: 1em; }
 
 header#small h1#site-title a span {
   font-size: 0.6em; }
 header#small h1#site-title a span.the,
 header#small h1#site-title a span.of {
   font-size: 0.266em; }
+header#small h1#site-title a span.oc {
+  margin-top: -0.5em; }
 
 header#large h1#site-title a span {
   font-size: 1em; }
@@ -5875,12 +5912,13 @@ span.post-date {
   margin-bottom: 2em; }
 
 p.hero {
-  font-size: 1em;
-  line-height: 1.6em;
-  text-align: justify; }
+  font-size: 1.2em;
+  line-height: 1.8em;
+  padding-left: 4.5em; }
 
 p.hero:first-line {
-  font-weight: 800; }
+  font-weight: 800;
+  text-indent: -4em; }
 
 p.hero:first-letter {
   font-size: 6em;
