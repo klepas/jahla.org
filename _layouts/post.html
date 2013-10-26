@@ -2,34 +2,56 @@
 layout: default
 ---
 
+{% include nav.html %}
+{% include header.html %}
+
 <div id="content">
-<div class="page-nav-top">
+  <div class="page-nav-top">
   {% if page.previous %}
-    <span class="previous-post pull-left"><a class="internal" rel="prev"  href="{{ page.previous.url }}" title="View {{ page.previous.title }}"><span class="icon-caret-left"></span> Previous article</a></span>
+    <span class="previous-post pull-left">
+      <a class="internal" rel="prev"  href="{{ page.previous.url }}" title="View {{ page.previous.title }}">
+        <span class="icon-caret-left"></span> Previous article
+      </a>
+    </span>
   {% endif %}
   {% if page.next %}
-    <span class="next-post pull-right"><a class="internal" rel="next"  href="{{ page.next.url }}" title="View {{ page.next.title }}"> Next article <span class="icon-caret-right"></span></a></span>
+    <span class="next-post pull-right">
+      <a class="internal" rel="next"  href="{{ page.next.url }}" title="View {{ page.next.title }}">
+         Next article <span class="icon-caret-right"></span>
+      </a>
+    </span>
   {% endif %}
-</div>
-
-<article class="clearfix" role="main">
-  <h2>{{ page.title }}</h2>
-  <span class="post-date" title="{{ page.date | date_to_xmlschema }}">
-		<span class="published">Published &bull;</span>
- 		<span class="day">{{ page.date | date: '%d' }}</span>
-		<span class="month"><acronym>{{ page.date | date: '%b' }}</acronym></span>
- 		<span class="year">{{ page.date | date: '%Y' }}</span>
-	</span>
-	{{ content }}
-</article>
-
-<div class="page-nav-bottom">
+  </div>
+  
+  <article class="clearfix" role="main">
+    <h2>{{ page.title }}</h2>
+    <span class="post-date" title="{{ page.date | date_to_xmlschema }}">
+  		<span class="published">Published &bull;</span>
+   		<span class="day">{{ page.date | date: '%d' }}</span>
+  		<span class="month"><acronym>{{ page.date | date: '%b' }}</acronym></span>
+   		<span class="year">{{ page.date | date: '%Y' }}</span>
+  	</span>
+  	
+  	{{ content }}
+  	
+  </article>
+  
+  <div class="page-nav-bottom">
   {% if page.previous %}
-    <span class="page-nav-item pull-left"><a class="internal" rel="prev"  href="{{ page.previous.url }}/#notebook" title="View {{ page.previous.title }}"><span class="icon-caret-left"></span> Previous article</a></span>
+    <span class="page-nav-item pull-left">
+      <a class="internal" rel="prev"  href="{{ page.previous.url }}/#notebook" title="View {{ page.previous.title }}">
+        <span class="icon-caret-left"></span> Previous article
+      </a>
+    </span>
   {% endif %}
   {% if page.next %}
-    <span class="page-nav-item pull-right"><a class="internal" rel="next"  href="{{ page.next.url }}/#notebook" title="View {{ page.next.title }}"> Next article <span class="icon-caret-right"></span></a></span>
+    <span class="page-nav-item pull-right">
+      <a class="internal" rel="next"  href="{{ page.next.url }}/#notebook" title="View {{ page.next.title }}">
+         Next article <span class="icon-caret-right"></span>
+      </a>
+    </span>
   {% endif %}
-</div>
-<div class="clearfix"></div>
-</div>
+  </div>
+</div> <!-- closes #content -->
+
+{% include footer.html %}

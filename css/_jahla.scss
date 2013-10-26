@@ -16,21 +16,27 @@ $font-family-serif: "Cardo", "Palatino Linotype", Palatino, Palladio, "URW Palla
 
 body
   {
-	width: 100%;
 	line-height: 1.6;
   }
 
 div#container
   {
-	text-align: center;
+  @include make-row();
+  margin: 0 auto;
+  text-align: center;
   }
 
-nav, header, div#content, footer
+nav#main,
+nav#main-large,
+header,
+div#content,
+footer
   {
-	width: 48em;
-	margin: 0 auto;
+  margin: 0 auto;
 	padding-top: 4em;
 	text-align: left;
+	@include make-md-column(8);
+	@include make-md-column-offset(2);
   }
 
 footer
@@ -45,7 +51,8 @@ footer
   
 */
 
-nav#main ul
+nav#main ul,
+nav#main-large ul
   {
 	list-style: none;
 	text-align: center;
@@ -81,6 +88,18 @@ ul.posts
 	list-style: none;
   }
 
+nav#contact ul
+  {
+  margin-top: 2em;
+  margin-left: -3em;
+  }
+
+nav#contact li 
+  {
+  padding: 1em 0;
+  line-height: 1em;
+  }
+
 div.page-nav-top
   {
 	margin-bottom: 2em;
@@ -89,6 +108,35 @@ div.page-nav-top
 div.page-nav-bottom
   {
 	margin-top: 2em;
+  }
+
+
+/*
+----------------------------------
+  Icons
+  
+*/
+
+span.contact
+  {
+  font-size: 1.5em;
+  padding-right: 1em;
+  margin-top: -0.16em;
+  float: left;
+  }
+
+
+/*
+----------------------------------
+  Images
+  
+*/
+
+img.profile-pic
+  {
+  display:inline;
+  float:right;
+  margin: 0 0 2em 2em;
   }
 
 
@@ -112,23 +160,63 @@ h1#site-title
 	text-align: center;
 	  a span
 	    {
-	    display: block;
+      display: block;
       }
     a span.the,
     a span.of
       {
-      font-style: italic;
-      font-size: 0.666em;
+      font-family: 'Open Sans';
+      text-transform: uppercase; 
+      }
+    a span.the
+      {
+      line-height: 1em;
+      padding: 0 0.8em;
+      display: inline;
+      background-color: white;
       }
     a span.oc
       {
-      padding: 0.5em 0;
+      padding: 1em 0;
+      font-weight: 700;
+      font-size: 1.6em;
+      border-top: 1px solid $grayCharcoal;
+      margin-top: -0.4em;
       }
     a span.jmg
-      {
-      padding-top: 0.5em;
+      {     
+      padding-top: 1em;
       }
   }
+header#small h1#site-title
+  {
+    a span
+      {
+      font-size: 0.6em;
+      }
+    a span.the,
+    a span.of
+      {
+      font-size: 0.266em;
+      }
+    a span.oc
+      {
+      margin-top: -0.5em;
+      }
+  }
+header#large h1#site-title
+  {
+    a span
+      {
+      font-size: 1em;
+      }
+    a span.the,
+    a span.of
+      {
+      font-size: 0.444em;
+      }
+  }
+
 
 h1, h2, h3, h4, h5, h6
   {
@@ -159,8 +247,24 @@ span.post-date
 	margin-bottom: 2em;
   }
 
-span#blurb
+p.hero
   {
-	display: block;
-	margin-bottom: 2em;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  padding-left: 4.5em
+  }
+
+p.hero:first-line 
+  {
+  font-weight: 800;
+  text-indent: -4em;
+  }
+
+p.hero:first-letter 
+  {
+  font-size: 6em;
+  line-height: 1em;
+  font-weight: 400;
+  float: left;
+  margin: -0.08em 0.08em 0 -0.08em;
   }

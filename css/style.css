@@ -5732,17 +5732,48 @@ td.visible-print {
   
 */
 body {
-  width: 100%;
   line-height: 1.6; }
 
 div#container {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin: 0 auto;
   text-align: center; }
+  div#container:before, div#container:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
+  div#container:after {
+    clear: both; }
 
-nav, header, div#content, footer {
-  width: 48em;
+nav#main,
+nav#main-large,
+header,
+div#content,
+footer {
   margin: 0 auto;
   padding-top: 4em;
-  text-align: left; }
+  text-align: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 992px) {
+    nav#main,
+    nav#main-large,
+    header,
+    div#content,
+    footer {
+      float: left;
+      width: 66.66667%; } }
+  @media (min-width: 992px) {
+    nav#main,
+    nav#main-large,
+    header,
+    div#content,
+    footer {
+      margin-left: 16.66667%; } }
 
 footer {
   margin-bottom: 4em; }
@@ -5752,13 +5783,16 @@ footer {
   Navigation
   
 */
-nav#main ul {
+nav#main ul,
+nav#main-large ul {
   list-style: none;
   text-align: center; }
-  nav#main ul li {
+  nav#main ul li,
+  nav#main-large ul li {
     display: inline;
     padding-right: 3em; }
-    nav#main ul li a {
+    nav#main ul li a,
+    nav#main-large ul li a {
       font-family: "Cardo", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
       font-style: italic;
       text-decoration: none;
@@ -5768,7 +5802,9 @@ nav#main ul {
       border: 1px solid #f2f3f4;
       border-radius: 4px; }
     nav#main ul li a:hover,
-    nav#main ul li a:focus {
+    nav#main ul li a:focus,
+    nav#main-large ul li a:hover,
+    nav#main-large ul li a:focus {
       background-color: #2A2C39;
       border: 1px solid #2A2C39;
       color: white;
@@ -5778,11 +5814,40 @@ nav#contact ul,
 ul.posts {
   list-style: none; }
 
+nav#contact ul {
+  margin-top: 2em;
+  margin-left: -3em; }
+
+nav#contact li {
+  padding: 1em 0;
+  line-height: 1em; }
+
 div.page-nav-top {
   margin-bottom: 2em; }
 
 div.page-nav-bottom {
   margin-top: 2em; }
+
+/*
+----------------------------------
+  Icons
+  
+*/
+span.contact {
+  font-size: 1.5em;
+  padding-right: 1em;
+  margin-top: -0.16em;
+  float: left; }
+
+/*
+----------------------------------
+  Images
+  
+*/
+img.profile-pic {
+  display: inline;
+  float: right;
+  margin: 0 0 2em 2em; }
 
 /*
 ----------------------------------
@@ -5800,12 +5865,35 @@ h1#site-title {
     display: block; }
   h1#site-title a span.the,
   h1#site-title a span.of {
-    font-style: italic;
-    font-size: 0.666em; }
+    font-family: 'Open Sans';
+    text-transform: uppercase; }
+  h1#site-title a span.the {
+    line-height: 1em;
+    padding: 0 0.8em;
+    display: inline;
+    background-color: white; }
   h1#site-title a span.oc {
-    padding: 0.5em 0; }
+    padding: 1em 0;
+    font-weight: 700;
+    font-size: 1.6em;
+    border-top: 1px solid #36454f;
+    margin-top: -0.4em; }
   h1#site-title a span.jmg {
-    padding-top: 0.5em; }
+    padding-top: 1em; }
+
+header#small h1#site-title a span {
+  font-size: 0.6em; }
+header#small h1#site-title a span.the,
+header#small h1#site-title a span.of {
+  font-size: 0.266em; }
+header#small h1#site-title a span.oc {
+  margin-top: -0.5em; }
+
+header#large h1#site-title a span {
+  font-size: 1em; }
+header#large h1#site-title a span.the,
+header#large h1#site-title a span.of {
+  font-size: 0.444em; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1em;
@@ -5823,6 +5911,18 @@ span.post-date {
   display: block;
   margin-bottom: 2em; }
 
-span#blurb {
-  display: block;
-  margin-bottom: 2em; }
+p.hero {
+  font-size: 1.2em;
+  line-height: 1.8em;
+  padding-left: 4.5em; }
+
+p.hero:first-line {
+  font-weight: 800;
+  text-indent: -4em; }
+
+p.hero:first-letter {
+  font-size: 6em;
+  line-height: 1em;
+  font-weight: 400;
+  float: left;
+  margin: -0.08em 0.08em 0 -0.08em; }
